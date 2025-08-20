@@ -1,14 +1,12 @@
-import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
-import QueryProvider from "@/state/query/QueryProvider";
-import type { Metadata } from "next";
-import "./globals.css";
-
-
+import Footer from '@/components/Footer';
+import Nav from '@/components/Nav';
+import QueryProvider from '@/state/query/QueryProvider';
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Cheraphs Empire",
-  description: "Building and Construction in Ghana",
+  title: 'Cheraphs Empire',
+  description: 'Building and Construction in Ghana',
 };
 
 export default function RootLayout({
@@ -18,12 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body  cz-shortcut-listen="true">
         <QueryProvider>
           <Nav />
-        {children}
+          {children}
+          <Footer />
         </QueryProvider>
-        <Footer />
       </body>
     </html>
   );

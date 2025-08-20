@@ -7,10 +7,10 @@ import { structureTool } from 'sanity/structure';
 import { schemaTypes } from './schemaTypes';
 import { visionTool } from '@sanity/vision';
 
-const conf = process.env.NEXT_APP_SANITY_STUDIO_API_KEY || '';
+
 const studioConfig = defineConfig({
   title: 'Cheraphs Empire',
-  projectId: conf,
+  projectId: process.env.NEXT_PUBLIC_SANITY_STUDIO_API_KEY || '',
   dataset: 'production',
   basePath: '/admindashboard',
   schema: {

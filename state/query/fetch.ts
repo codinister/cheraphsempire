@@ -7,7 +7,7 @@ const client = axios.create({
 const fetch = ({ ...options }) => {
   return client(options)
     .then((data) => data)
-    .then((err) => err);
+    .catch((err) => err);
 };
 
 export default fetch;
