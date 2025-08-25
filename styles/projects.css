@@ -1,0 +1,40 @@
+@media (min-width: 35em) {
+  .projects {
+    padding-block: 5.6rem;
+    h5 {
+      margin-bottom: 4rem;
+    }
+    & > div {
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.4rem;
+        & > div {
+          flex: 1 1 30rem;
+          height: 30rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  .projects {
+    padding: 2.4rem;
+    h5 {
+      margin-bottom: 4rem;
+    }
+    & > div {
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.4rem;
+        & > div {
+          flex: 1 1 10rem;
+          height: 10rem;
+          
+        }
+      }
+    }
+  }
+}

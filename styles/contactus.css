@@ -1,0 +1,208 @@
+@media (min-width: 35em) {
+  .contactus {
+    padding-block: 5.6rem;
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+      & > div {
+        flex: 1 1 10rem;
+      }
+
+      & > div:nth-of-type(2) {
+        ul {
+          li {
+            h6 {
+              opacity: 0.6;
+            }
+            margin-bottom: 2.4rem;
+            display: flex;
+            gap: 1.6rem;
+            svg {
+              font-size: 4rem;
+            }
+          }
+        }
+      }
+
+      & > div:nth-of-type(3) {
+        background-color: #f5f5f5;
+        padding: 2.4rem;
+        h6 {
+          opacity: 0.6;
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      .form-control {
+        margin-bottom: 2rem;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 0.4rem;
+          border: solid 0.1rem #666;
+          height: 3.5rem;
+          outline: none;
+          color: #666;
+          background-color: rgba(255, 255, 255, 0.4);
+          &:focus + label {
+            transition: 0.3s;
+            top: -2.4rem;
+            left: 1.2rem;
+            font-size: 1.2rem;
+          }
+          &:not(:placeholder-shown) + label {
+            transition: 0.3s;
+            top: -2.4rem;
+            left: 1.2rem;
+            font-size: 1.2rem;
+          }
+        }
+
+        label {
+          transition: 0.2s;
+          color: #444 !important;
+          position: absolute;
+          left: 1.2rem;
+          top: 0.4rem;
+          pointer-events: none;
+        }
+      }
+
+      .err-box {
+        color: rgb(226, 36, 36);
+      }
+
+      .form-textarea {
+        margin-bottom: 2.4rem;
+        textarea {
+          width: 100%;
+          height: 15rem;
+          border: solid 0.1rem #666;
+          outline: none;
+          padding: 1.2rem;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+
+      button {
+        padding-block: 1.2rem;
+        background-color: transparent;
+        border: solid 0.1rem #666;
+
+        padding-inline: 1.6rem;
+        color: #666;
+        &:hover {
+          background-color: #666;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 35em) {
+  .contactus {
+    padding: 2.4rem;
+    & > div {
+ 
+      & > div {
+        flex: 1 1 10rem;
+      }
+
+      & > div:nth-of-type(2) {
+        padding-block: 4rem;
+        ul {
+          li {
+            h6 {
+              opacity: 0.6;
+            }
+            margin-bottom: 2.4rem;
+            display: flex;
+            gap: 1.6rem;
+            svg {
+              font-size: 4rem;
+            }
+          }
+        }
+      }
+
+      & > div:nth-of-type(3) {
+        background-color: #f5f5f5;
+        padding: 2.4rem;
+        h6 {
+          opacity: 0.6;
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      .form-control {
+        margin-bottom: 2rem;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 0.4rem;
+          border: solid 0.1rem #666;
+          height: 3.5rem;
+          outline: none;
+          color: #666;
+          background-color: rgba(255, 255, 255, 0.4);
+          &:focus + label {
+            transition: 0.3s;
+            top: -2.4rem;
+            left: 1.2rem;
+            font-size: 1.2rem;
+          }
+          &:not(:placeholder-shown) + label {
+            transition: 0.3s;
+            top: -2.4rem;
+            left: 1.2rem;
+            font-size: 1.2rem;
+          }
+        }
+
+        label {
+          transition: 0.2s;
+          color: #444 !important;
+          position: absolute;
+          left: 1.2rem;
+          top: 0.4rem;
+          pointer-events: none;
+        }
+      }
+
+      .err-box {
+        color: rgb(226, 36, 36);
+      }
+
+      .form-textarea {
+        margin-bottom: 2.4rem;
+        textarea {
+          width: 100%;
+          height: 15rem;
+          border: solid 0.1rem #666;
+          outline: none;
+          padding: 1.2rem;
+          color: white;
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+
+      button {
+        padding-block: 1.2rem;
+        background-color: transparent;
+        border: solid 0.1rem #666;
+
+        padding-inline: 1.6rem;
+        color: #666;
+        &:hover {
+          background-color: #666;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

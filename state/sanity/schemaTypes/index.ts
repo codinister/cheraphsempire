@@ -3,23 +3,29 @@ import home from './home';
 import aboutus from './aboutus';
 import settings from './settings';
 import team from './team';
-import sevices from './services';
+import services from './services';
 import projects from './projects';
-import imagecard from './object/imageCard'
-import textcard from './object/textCard'
-import imageOnly from './object/imageOnly'
+import imagecard from './object/imageCard';
+import textcard from './object/textCard';
+import imageOnly from './object/imageOnly';
 import textOnly from './object/textOnly';
+import whychooseus from './whychooseus';
+import history from './history';
+import testimonials from './testimonials';
 
 export const schemaTypes = [
   home,
   aboutus,
   settings,
   team,
-  sevices,
+  services,
   projects,
   blockContent,
-  textcard, 
+  textcard,
   imagecard,
-  imageOnly, 
-  textOnly
+  imageOnly,
+  textOnly,
+  whychooseus,
+  history,
+  testimonials,
 ];

@@ -18,19 +18,27 @@ export default defineType({
       validation: (Rule) => Rule.required().error('Content field required!'),
     }),
 
-
     defineField({
       name: 'skills',
       title: 'Skills',
-      type: 'textonly',
+      type: 'array',
+      of: [{ type: 'textonly' }],
     }),
-    
+
     defineField({
       name: 'cards',
       title: 'Cards',
       type: 'array',
-      of: [{type: 'textcard'}],
+      of: [{ type: 'textcard' }],
       validation: (Rule) => Rule.required().error('Cards field required!'),
+    }),
+    defineField({
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true
+      }
     }),
   ],
 });

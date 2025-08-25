@@ -9,9 +9,36 @@ import { FaRegClock } from 'react-icons/fa';
 import { LuInstagram } from 'react-icons/lu';
 import { BsTwitterX } from 'react-icons/bs';
 import { FaFacebookF } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import useActivenav from './useActivenav';
 
 const Nav = () => {
+  const [show, setShow] = useState('hide');
+
+  const showBox = () => setShow('show');
+  const hideBox = () => setShow('hide');
+
+
   const data = useGetQuery('settings', '/settings');
+
+  useEffect(() => {
+    window.addEventListener('scroll', navscroll);
+
+    return () => window.removeEventListener('scrol', navscroll);
+  }, []);
+
+  const navscroll = () => {
+    const scrolly = Math.floor(window.scrollY);
+
+    if (scrolly > 100) {
+      document.querySelector('.navbar')?.classList.add('fixed');
+    } else {
+      document.querySelector('.navbar')?.classList.remove('fixed');
+    }
+  };
+
+
+
 
   return (
     <nav>
@@ -31,7 +58,6 @@ const Nav = () => {
               {data[0]?.working_hours}
             </li>
           </ul>
-     
         </div>
         <div>
           <a href={data[0]?.facebook} title="Facebook">
@@ -44,52 +70,77 @@ const Nav = () => {
             <LuInstagram />
           </a>
         </div>
-      
       </div>
-      <div className="navbar">
+
+      <div className={show === 'show' ? 'navbar show' : 'navbar'}
+      
+      >
         <div
           style={{
             backgroundImage: `url(${data[0]?.logo})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'bottom',
           }}
         ></div>
 
         <div>
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={hideBox} className={useActivenav('/')}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="/aboutus">About Us</Link>
+              <Link
+                href="/aboutus"
+                onClick={hideBox}
+                className={useActivenav('/aboutus')}
+              >
+                About Us
+              </Link>
             </li>
             <li>
-              <Link href="/services">Services</Link>
+              <Link
+                href="/services"
+                onClick={hideBox}
+                className={useActivenav('/services')}
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link href="/projects">Projects</Link>
+              <Link
+                href="/projects"
+                onClick={hideBox}
+                className={useActivenav('/projects')}
+              >
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="/team">Team</Link>
-            </li>
-            <li>
-              <Link href="/process">Process</Link>
-            </li>
-            <li>
-              <Link href="/contactus">Contact Us</Link>
+              <Link
+                href="/contactus"
+                onClick={hideBox}
+                className={useActivenav('/contactus')}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="navbar-overlay"></div>
+      <div className={`navbar-overlay ${show}`} onClick={hideBox}></div>
 
       <Image
         src="/hamburger.jpg"
         alt="icon"
-        width="3"
-        height="3"
+        width="20"
+        height="20"
         className="hamburger"
+        onClick={showBox}
       />
+
+      <h6 className="comp-name">{data[0]?.title}</h6>
     </nav>
   );
 };

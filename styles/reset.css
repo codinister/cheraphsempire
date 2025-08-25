@@ -21,9 +21,9 @@ ul {
 
 :root {
   font-size: 62.5%;
-  --black: #0A0A0E; 
-  --yellow: #FFD200;
-  --white: #FFFFFF;
+  --black: #222222;
+  --yellow: #ffd200;
+  --white: #ffffff;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 2.4;
+  line-height: 2.4rem;
   color: #222222;
   scroll-behavior: smooth;
 }
@@ -42,41 +42,41 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   letter-spacing: -1%;
 }
 
 h1 {
   font-size: 28.8rem;
-  line-height: 34.56;
+  line-height: 34.56rem;
 }
 
 h2 {
   font-size: 17.8rem;
-  line-height: 21.36;
+  line-height: 21.36rem;
 }
 
 h3 {
   font-size: 11rem;
-    line-height: 13.2;
+  line-height: 13.2rem;
 }
 
 h4 {
   font-size: 6.8rem;
-    line-height: 8.16;
+  line-height: 8.16rem;
 }
 
 h5 {
   font-size: 4.2rem;
-    line-height: 5.04;
+  line-height: 5.04rem;
 }
 
 h6 {
   font-size: 2.6rem;
-    line-height: 3.12;
+  line-height: 3.12rem;
 }
 
-p{
+p {
   font-size: 1.6rem;
-    line-height: 2.4;
+  line-height: 2.4rem;
 }

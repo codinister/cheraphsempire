@@ -1,4 +1,26 @@
-.container {
-  padding-inline: 6.4rem;
-  margin-inline: auto;
+@media (min-width: 35em) {
+  .container {
+    padding-inline: 6.4rem;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 35em) {
+}
+
+iframe {
+  border: none;
+}
+
+.btn {
+  display: block;
+  border-radius: 0.4rem;
+  border: solid 0.1rem white;
+  width: max-content;
+  padding-inline: 1.6rem;
+  padding-block: 0.4rem;
+  color: white;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
 }
