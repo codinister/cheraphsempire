@@ -86,6 +86,7 @@
         color: white;
         padding-top: 10rem;
         font-size: 4rem;
+        line-height: 6rem;
       }
 
       & > div:nth-of-type(1) {
