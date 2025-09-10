@@ -85,6 +85,10 @@ const Footer = () => {
                 <span>{sett?.phone3}</span>
               </li>
               <li>
+                <LuPhone />
+                <span>{sett?.phone4}</span>
+              </li>
+              <li>
                 <a href={sett?.facebook} target="_blank">
                   <FaSquareFacebook />
                 </a>
