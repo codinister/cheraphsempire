@@ -71,9 +71,27 @@
       }
     }
   }
+
+  .youtubebox {
+    display: flex;
+    & > div {
+      flex: 1 1 10rem;
+      height: 40rem;
+    }
+  }
 }
 
 @media (max-width: 35em) {
+
+
+  .youtubebox {
+padding: 2.4rem;
+    & > div {
+      height: 40rem;
+    }
+  }
+
+
   .home {
     height: 100vh;
     position: relative;

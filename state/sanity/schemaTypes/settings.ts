@@ -95,5 +95,23 @@ export default defineType({
         hotspot: true,
       },
     }),
+
+    defineField({
+      name: 'youtube',
+      title: 'Youtube',
+      type: 'string'
+    }),
+
+
+    defineField({
+      name: 'cover',
+      title: 'Cover Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+
+
   ],
 });

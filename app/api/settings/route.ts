@@ -10,7 +10,8 @@ export async function GET() {
     const data = await serverConfig.fetch(groq`
       *[_type == 'settings']{
       ...,
-      'logo': logo.asset->url
+      'logo': logo.asset->url,
+      'cover': cover.asset->url
       }
       `);
     return NextResponse.json(data);
