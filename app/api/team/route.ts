@@ -10,7 +10,8 @@ export async function GET() {
     const data = await serverConfig.fetch(groq`
       *[_type == 'team']{
         'image': Image.asset->url,
-        title
+        title,
+        subtitle
       }
       `);
     return NextResponse.json(data);

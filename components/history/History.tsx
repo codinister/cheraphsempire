@@ -20,8 +20,9 @@ const History = () => {
       <div
         style={{
           backgroundImage: `url(${image})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'top',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'contain',
+       
         }}
       ></div>
       <div>

@@ -16,8 +16,8 @@ export default function Page() {
     <>
       <Home />
       <Whychooseus />
-         <Youtubebox  />
       <Projects />
+      <Youtubebox  />
       <Testimonials />
       <Team />
     </>

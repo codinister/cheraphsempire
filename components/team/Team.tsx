@@ -6,6 +6,7 @@ const Team = () => {
   const data: {
     title: string;
     image: string;
+    subtitle: string;
   }[] = useGetQuery('team', '/team');
 
   return (
@@ -22,6 +23,7 @@ const Team = () => {
               }}
             ></div>
             <h6>{v.title}</h6>
+            <p>{v.subtitle}</p>
           </div>
         ))}
       </div>
