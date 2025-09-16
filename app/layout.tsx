@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Cheraphs Empire',
+  title: 'Cheraphs Group of Companies',
   description: 'Building and Construction in Ghana',
 };
 
