@@ -12,6 +12,7 @@
       h4 {
         color: white;
         padding-top: 10rem;
+        font-size: 4rem;
       }
 
       & > div:nth-of-type(1) {

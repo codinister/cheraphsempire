@@ -1,20 +1,16 @@
-import useGetQuery from "@/state/query/useGetQuery"
-import { BsWhatsapp } from "react-icons/bs";
-
+import useGetQuery from '@/state/query/useGetQuery';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Whatsapp = () => {
-  const sett = useGetQuery('settings','/settings')
+  const sett = useGetQuery('settings', '/settings');
 
-  const whatsapp = sett[0]?.whatsapp || ''
-
-  const whatsnumber = whatsapp.split(' ').join('').slice(-9)
+  const whatsapp = sett[0]?.whatsapp || '';
 
   return (
-    <a href={`https://wa.me/233${whatsnumber}}`} className="whatsapp">
-    <BsWhatsapp />
+    <a href={`https://wa.me/${whatsapp}`} className="whatsapp">
+      <BsWhatsapp />
     </a>
-  )
-}
+  );
+};
 
-
-export default Whatsapp
+export default Whatsapp;

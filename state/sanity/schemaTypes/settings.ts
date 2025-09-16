@@ -104,12 +104,9 @@ export default defineType({
 
 
     defineField({
-      name: 'cover',
-      title: 'Cover Image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      name: 'phone5',
+      title: 'Phone Five',
+      type: 'string',
     }),
 
 

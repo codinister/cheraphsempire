@@ -89,6 +89,10 @@ const Footer = () => {
                 <span>{sett?.phone4}</span>
               </li>
               <li>
+                <LuPhone />
+                <span>{sett?.phone5}</span>
+              </li>
+              <li>
                 <a href={sett?.facebook} target="_blank">
                   <FaSquareFacebook />
                 </a>
@@ -105,7 +109,7 @@ const Footer = () => {
       </div>
       <div>
         <div className="container">
-          Copyrigt &copy; 2023 {sett?.comp_name} Design by Codenester
+          Copyrigt &copy; 2025 {sett?.comp_name} Design by Codenester
         </div>
       </div>
 

@@ -12,6 +12,7 @@ import textOnly from './object/textOnly';
 import whychooseus from './whychooseus';
 import history from './history';
 import testimonials from './testimonials';
+import mining from './mining';
 
 export const schemaTypes = [
   home,
@@ -25,6 +26,7 @@ export const schemaTypes = [
   imagecard,
   imageOnly,
   textOnly,
+  mining,
   whychooseus,
   history,
   testimonials,

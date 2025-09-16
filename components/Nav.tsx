@@ -51,7 +51,7 @@ const Nav = () => {
             </li>
             <li>
               <FaPhoneAlt />
-              {data[0]?.phone4}
+              {data[0]?.phone3}
             </li>
             <li>
               <FaRegClock />

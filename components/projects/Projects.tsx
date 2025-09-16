@@ -21,22 +21,81 @@ const Projects = () => {
   return (
     <>
       <div className="projects">
-        <div className="container">
-          <h5>{title}</h5>
-
+        <h5>{title}</h5>
+        <div>
           <div>
-            {Object.values(gallery).map((v, k) => (
+            <div
+              onClick={() => {
+                modalFn('show');
+                setModalimg(gallery[0]?.image);
+              }}
+              style={{
+                backgroundImage: `url(${gallery[0]?.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'top',
+              }}
+            ></div>
+            <div>
               <div
                 onClick={() => {
                   modalFn('show');
-                  setModalimg(v.image);
+                  setModalimg(gallery[1]?.image);
                 }}
-                key={k}
                 style={{
-                  backgroundImage: `url(${v.image})`,
+                  backgroundImage: `url(${gallery[1]?.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
                 }}
               ></div>
-            ))}
+              <div
+                onClick={() => {
+                  modalFn('show');
+                  setModalimg(gallery[2]?.image);
+                }}
+                style={{
+                  backgroundImage: `url(${gallery[2]?.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
+                }}
+              ></div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div
+                onClick={() => {
+                  modalFn('show');
+                  setModalimg(gallery[3]?.image);
+                }}
+                style={{
+                  backgroundImage: `url(${gallery[3]?.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
+                }}
+              ></div>
+              <div
+                onClick={() => {
+                  modalFn('show');
+                  setModalimg(gallery[4]?.image);
+                }}
+                style={{
+                  backgroundImage: `url(${gallery[4]?.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
+                }}
+              ></div>
+            </div>
+            <div
+              onClick={() => {
+                modalFn('show');
+                setModalimg(gallery[5]?.image);
+              }}
+              style={{
+                backgroundImage: `url(${gallery[5]?.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'top',
+              }}
+            ></div>
           </div>
         </div>
       </div>
