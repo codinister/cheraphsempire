@@ -100,12 +100,15 @@
         & > div {
           display: flex;
           gap: 2.4rem;
-          margin-top: 1.6rem;
+          margin-top: 2.4rem;
           & > div {
             flex: 1 1 10rem;
           }
         }
       }
+
+ 
+
       &:nth-of-type(2) {
         position: relative;
         z-index: 1;
