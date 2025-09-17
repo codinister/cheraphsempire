@@ -99,9 +99,8 @@ export default defineType({
     defineField({
       name: 'youtube',
       title: 'Youtube',
-      type: 'string'
+      type: 'string',
     }),
-
 
     defineField({
       name: 'phone5',
@@ -109,6 +108,13 @@ export default defineType({
       type: 'string',
     }),
 
-
+    defineField({
+      name: 'flag',
+      title: 'Flag',
+      type: 'image',
+      options: {
+        hotspot: true
+      }
+    }),
   ],
 });

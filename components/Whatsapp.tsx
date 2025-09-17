@@ -6,8 +6,11 @@ const Whatsapp = () => {
 
   const whatsapp = sett[0]?.whatsapp || '';
 
+
+  const whatsapp_num = whatsapp.slice(-9)
+
   return (
-    <a href={`https://wa.me/${whatsapp}`} className="whatsapp">
+    <a href={`https://wa.me/233${whatsapp_num}`} className="whatsapp">
       <BsWhatsapp />
     </a>
   );

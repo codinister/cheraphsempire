@@ -5,6 +5,7 @@ import { IoLocationOutline } from 'react-icons/io5';
 import { CiPhone } from 'react-icons/ci';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { FaRegClock } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
 
 const Contactus = () => {
   const sett = useGetQuery('settings', '/settings');
@@ -46,11 +47,11 @@ const Contactus = () => {
             </li>
             <li>
               <div>
-                <CiPhone />
+                 <BsWhatsapp />
               </div>
               <div>
-                <h6>Phone 3</h6>
-                <p>{sett[0]?.phone3}</p>
+                <h6>Whatsapp</h6>
+                    <p>{sett[0]?.whatsapp}</p>
               </div>
             </li>
             <li>
