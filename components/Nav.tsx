@@ -78,8 +78,9 @@ const Nav = () => {
         <div
           style={{
             backgroundImage: `url(${data[0]?.logo})`,
-            backgroundSize: 'cover',
+            backgroundSize: 'contain',
             backgroundPosition: 'bottom',
+            backgroundRepeat: 'no-repeat'
           }}
         ></div>
 
