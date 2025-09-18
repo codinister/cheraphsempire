@@ -3,6 +3,7 @@
 import useGetQuery from '@/state/query/useGetQuery';
 import Modal from '../Modal';
 import { useState } from 'react';
+import Imagebox from './Imagebox';
 
 const Projects = () => {
   const data = useGetQuery('projects', '/projects');
@@ -22,81 +23,113 @@ const Projects = () => {
     <>
       <div className="projects">
         <h5>{title}</h5>
-        <div>
-          <div>
-            <div
-              onClick={() => {
-                modalFn('show');
-                setModalimg(gallery[0]?.image);
-              }}
-              style={{
-                backgroundImage: `url(${gallery[0]?.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'top',
-              }}
-            ></div>
-            <div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(gallery[1]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${gallery[1]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'top',
-                }}
-              ></div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(gallery[2]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${gallery[2]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'top',
-                }}
-              ></div>
-            </div>
-          </div>
+        <div className="container">
+
+
+
           <div>
             <div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(gallery[3]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${gallery[3]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'top',
-                }}
-              ></div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(gallery[4]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${gallery[4]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'top',
-                }}
-              ></div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[0]?.image}
+              />
+              <div>
+                <Imagebox
+                  modalFn={modalFn}
+                  setModalimg={setModalimg}
+                  image={gallery[1]?.image}
+                />
+                <Imagebox
+                  modalFn={modalFn}
+                  setModalimg={setModalimg}
+                  image={gallery[2]?.image}
+                />
+                <Imagebox
+                  modalFn={modalFn}
+                  setModalimg={setModalimg}
+                  image={gallery[3]?.image}
+                />
+              </div>
             </div>
-            <div
-              onClick={() => {
-                modalFn('show');
-                setModalimg(gallery[5]?.image);
-              }}
-              style={{
-                backgroundImage: `url(${gallery[5]?.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'top',
-              }}
-            ></div>
+            <div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[4]?.image}
+              />
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[5]?.image}
+              />
+            </div>
           </div>
+
+
+
+
+
+
+          <div>
+            <div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[6]?.image}
+              />
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[7]?.image}
+              />
+            </div>
+            <Imagebox
+              modalFn={modalFn}
+              setModalimg={setModalimg}
+              image={gallery[8]?.image}
+            />
+            <div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[9]?.image}
+              />
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={gallery[10]?.image}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={gallery[11]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={gallery[12]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={gallery[13]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={gallery[14]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={gallery[15]?.image}
+          />
         </div>
       </div>
 

@@ -1,50 +1,75 @@
 @media (min-width: 35em) {
   .projects {
     background-color: var(--black);
-    padding-inline: 6.4rem;
     padding-block: 5.6rem;
-
     h5 {
       color: white;
-      margin-bottom: 4rem;
+      margin-left: 6.4rem;
+      margin-bottom: 5.6rem;
     }
 
-    & > div {
+    & > div:nth-of-type(1) {
       display: flex;
       gap: 1.6rem;
       & > div {
         flex: 1 1 10rem;
-        height: 61.6rem;
+        height: 63rem;
       }
       & > div:nth-of-type(1) {
         & > div:nth-of-type(1) {
-          height: 40rem;
-          margin-bottom: 1.6rem;
+          display: flex;
+          gap: 1.6rem;
+          & > div {
+            height: 46.5rem;
+            flex: 1 1 5rem;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
+            }
+          }
+          & > div:nth-of-type(1) {
+            flex-grow: 3;
+          }
+          & > div:nth-of-type(2) {
+            display: flex;
+            gap: 1.6rem;
+            flex-direction: column;
+            & > div {
+              flex: 1 1 10rem;
+              height: 10rem;
 
-          position: relative;
-          cursor: pointer;
-          &::before {
-            content: '';
-            display: block;
-            inset: 0;
-            background-image: linear-gradient(transparent, var(--black));
-            position: absolute;
+              position: relative;
+              cursor: pointer;
+              &::before {
+                position: absolute;
+                content: '';
+                inset: 0;
+                background-image: linear-gradient(
+                  transparent 55%,
+                  var(--black)
+                );
+              }
+            }
           }
         }
         & > div:nth-of-type(2) {
           display: flex;
           gap: 1.6rem;
+          margin-top: 1.6rem;
           & > div {
             flex: 1 1 10rem;
-            height: 20rem;
+            height: 15rem;
             position: relative;
             cursor: pointer;
             &::before {
-              content: '';
-              display: block;
-              inset: 0;
-              background-image: linear-gradient(transparent, var(--black));
               position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
             }
           }
         }
@@ -55,30 +80,64 @@
           gap: 1.6rem;
           & > div {
             flex: 1 1 10rem;
-            height: 20rem;
+            height: 15rem;
             position: relative;
             cursor: pointer;
             &::before {
-              content: '';
-              display: block;
-              inset: 0;
-              background-image: linear-gradient(transparent, var(--black));
               position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
             }
           }
         }
         & > div:nth-of-type(2) {
-          height: 40rem;
-          margin-top: 1.6rem;
+          margin-block: 1.6rem;
+          height: 30rem;
           position: relative;
           cursor: pointer;
           &::before {
-            content: '';
-            display: block;
-            inset: 0;
-            background-image: linear-gradient(transparent, var(--black));
             position: absolute;
+            content: '';
+            inset: 0;
+            background-image: linear-gradient(transparent 55%, var(--black));
           }
+        }
+        & > div:nth-of-type(3) {
+          display: flex;
+          gap: 1.6rem;
+
+          & > div {
+            flex: 1 1 10rem;
+            height: 15rem;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
+            }
+          }
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      margin-top: 1.6rem;
+      & > div {
+        flex: 1 1 10rem;
+        height: 15rem;
+        position: relative;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          content: '';
+          inset: 0;
+          background-image: linear-gradient(transparent 55%, var(--black));
         }
       }
     }
@@ -88,50 +147,82 @@
 
 
 
+
+
+
+
+
+
 @media (max-width: 35em) {
   .projects {
     background-color: var(--black);
-    padding: 2.4rem;
-
+    padding-block: 5.6rem;
     h5 {
       color: white;
-      margin-bottom: 4rem;
+      margin-left: 2.4rem;
+      margin-bottom: 5.6rem;
     }
 
-    & > div {
-
+    & > div:nth-of-type(1) {
+ 
       & > div {
-        height: 61.6rem;
+        height: 63rem;
       }
       & > div:nth-of-type(1) {
         & > div:nth-of-type(1) {
-          height: 40rem;
-          margin-bottom: 1.6rem;
+          display: flex;
+          gap: 1.6rem;
+          & > div {
+            height: 46.5rem;
+            flex: 1 1 5rem;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
+            }
+          }
+          & > div:nth-of-type(1) {
+            flex-grow: 3;
+          }
+          & > div:nth-of-type(2) {
+            display: flex;
+            gap: 1.6rem;
+            flex-direction: column;
+            & > div {
+              flex: 1 1 10rem;
+              height: 10rem;
 
-          position: relative;
-          cursor: pointer;
-          &::before {
-            content: '';
-            display: block;
-            inset: 0;
-            background-image: linear-gradient(transparent, var(--black));
-            position: absolute;
+              position: relative;
+              cursor: pointer;
+              &::before {
+                position: absolute;
+                content: '';
+                inset: 0;
+                background-image: linear-gradient(
+                  transparent 55%,
+                  var(--black)
+                );
+              }
+            }
           }
         }
         & > div:nth-of-type(2) {
           display: flex;
           gap: 1.6rem;
+          margin-top: 1.6rem;
           & > div {
             flex: 1 1 10rem;
-            height: 20rem;
+            height: 15rem;
             position: relative;
             cursor: pointer;
             &::before {
-              content: '';
-              display: block;
-              inset: 0;
-              background-image: linear-gradient(transparent, var(--black));
               position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
             }
           }
         }
@@ -142,30 +233,64 @@
           gap: 1.6rem;
           & > div {
             flex: 1 1 10rem;
-            height: 20rem;
+            height: 15rem;
             position: relative;
             cursor: pointer;
             &::before {
-              content: '';
-              display: block;
-              inset: 0;
-              background-image: linear-gradient(transparent, var(--black));
               position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
             }
           }
         }
         & > div:nth-of-type(2) {
-          height: 40rem;
-          margin-top: 1.6rem;
+          margin-block: 1.6rem;
+          height: 30rem;
           position: relative;
           cursor: pointer;
           &::before {
-            content: '';
-            display: block;
-            inset: 0;
-            background-image: linear-gradient(transparent, var(--black));
             position: absolute;
+            content: '';
+            inset: 0;
+            background-image: linear-gradient(transparent 55%, var(--black));
           }
+        }
+        & > div:nth-of-type(3) {
+          display: flex;
+          gap: 1.6rem;
+
+          & > div {
+            flex: 1 1 10rem;
+            height: 15rem;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              position: absolute;
+              content: '';
+              inset: 0;
+              background-image: linear-gradient(transparent 55%, var(--black));
+            }
+          }
+        }
+      }
+    }
+
+    & > div:nth-of-type(2) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.6rem;
+      margin-top: 1.6rem;
+      & > div {
+        flex: 1 1 10rem;
+        height: 15rem;
+        position: relative;
+        cursor: pointer;
+        &::before {
+          position: absolute;
+          content: '';
+          inset: 0;
+          background-image: linear-gradient(transparent 55%, var(--black));
         }
       }
     }

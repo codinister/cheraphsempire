@@ -1,6 +1,7 @@
 import useGetQuery from '@/state/query/useGetQuery';
 import { useState } from 'react';
 import Modal from './Modal';
+import Imagebox from './projects/Imagebox';
 
 const Mining = () => {
   const data = useGetQuery('mining', '/mining');
@@ -23,70 +24,68 @@ const Mining = () => {
             <h5>{title}</h5>
 
             <div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(images[0]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${images[0]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: "center",
-                }}
-              ></div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(images[1]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${images[1]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: "center",
-                }}
-              ></div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={images[0]?.image}
+              />
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={images[1]?.image}
+              />
             </div>
 
             <div>{text}</div>
           </div>
 
           <div>
-            <div
-              onClick={() => {
-                modalFn('show');
-                setModalimg(images[2]?.image);
-              }}
-              style={{
-                backgroundImage: `url(${images[2]?.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: "center",
-              }}
-            ></div>
+            <Imagebox
+              modalFn={modalFn}
+              setModalimg={setModalimg}
+              image={images[2]?.image}
+            />
             <div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(images[3]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${images[3]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: "center",
-                }}
-              ></div>
-              <div
-                onClick={() => {
-                  modalFn('show');
-                  setModalimg(images[4]?.image);
-                }}
-                style={{
-                  backgroundImage: `url(${images[4]?.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: "center",
-                }}
-              ></div>
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={images[3]?.image}
+              />
+              <Imagebox
+                modalFn={modalFn}
+                setModalimg={setModalimg}
+                image={images[4]?.image}
+              />
             </div>
           </div>
+        </div>
+
+        <div className="container">
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={images[5]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={images[6]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={images[7]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={images[8]?.image}
+          />
+          <Imagebox
+            modalFn={modalFn}
+            setModalimg={setModalimg}
+            image={images[9]?.image}
+          />
         </div>
       </div>
       <Modal image={modalimg} actionFn={modalFn} value={modalvalue} />

@@ -9,6 +9,7 @@ import { BsTwitterX } from 'react-icons/bs';
 import { IoMdBook } from 'react-icons/io';
 import useGetQuery from '@/state/query/useGetQuery';
 import Whatsapp from './Whatsapp';
+import Image from 'next/image';
 
 const Footer = () => {
   //SETTINGS  DATA
@@ -61,6 +62,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/contactus">Contact</Link>
+              </li>
+              <li>
+                <Image alt="flag" src={sett?.flag} width={200} height={100} />
               </li>
             </ul>
           </div>

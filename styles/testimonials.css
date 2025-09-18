@@ -4,7 +4,7 @@
       margin-bottom: 4rem;
     }
     position: relative;
-
+    height: 40rem;
     z-index: 1;
     color: white;
     &::before {
@@ -17,6 +17,7 @@
     & > div {
       display: flex;
       flex-wrap: wrap;
+      gap: 4rem;
       & > div {
         flex: 1 1 10rem;
       }
@@ -34,17 +35,16 @@
         }
       }
       & > div:nth-of-type(2) {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 5.6rem;
-        & > div {
-          width: 20rem;
-          height: 30rem;
-        }
+        padding-top: 4.5rem;
       }
     }
   }
 }
+
+
+
+
+
 
 @media (max-width: 35em) {
   .testimonials {
@@ -52,9 +52,10 @@
       margin-bottom: 4rem;
     }
     position: relative;
-
+    
     z-index: 1;
     color: white;
+    padding: 2.4rem;
     &::before {
       content: '';
       position: absolute;
@@ -63,9 +64,10 @@
       background-color: rgba(0, 0, 0, 0.8);
     }
     & > div {
-  
+    
+
       & > div:nth-of-type(1) {
-        padding: 2.4rem;
+        padding-block: 5.6rem;
         & > div {
           display: flex;
           gap: 1.6rem;
@@ -78,14 +80,9 @@
         }
       }
       & > div:nth-of-type(2) {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 2.4rem;
-        & > div {
-          width: 20rem;
-          height: 30rem;
-        }
+        padding-top: 4.5rem;
       }
     }
   }
 }
+

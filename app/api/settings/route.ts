@@ -11,6 +11,7 @@ export async function GET() {
       *[_type == 'settings']{
       ...,
       'logo': logo.asset->url,
+           'flag': flag.asset->url,
       'cover': cover.asset->url
       }
       `);
